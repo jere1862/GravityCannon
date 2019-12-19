@@ -12,7 +12,7 @@ public class Planet : MonoBehaviour
     void Start()
     {
 
-        gravity = Min(transform.localScale.y, maxGravity); //(float) System.Math.Tanh(transform.localScale.y) * 5;
+        gravity = transform.localScale.y * 10; //(float) System.Math.Tanh(transform.localScale.y) * 5;
     }
 
     // Update is called once per frame
