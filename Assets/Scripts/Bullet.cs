@@ -12,7 +12,6 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.AddForce(initalForce);
         GameObject[] objects = GameObject.FindGameObjectsWithTag("Planet");
         foreach (GameObject obj in objects)
         {
