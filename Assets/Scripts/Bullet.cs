@@ -29,5 +29,9 @@ public class Bullet : MonoBehaviour
             
             rb.AddForce(heading * planet.gravity);
         }
+        if(Mathf.Abs(rb.velocity.magnitude) < 0.1f && rb.velocity.magnitude != 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
